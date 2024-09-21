@@ -6,7 +6,7 @@ from PIL import Image
 from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
-model = load_model("waste_classification_model.keras")
+model = load_model("./models/waste_classification_v1.keras")
 
 class_names = [
     "Dry-waste",

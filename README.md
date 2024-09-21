@@ -1,2 +1,2 @@
-# AgriLoop-ML
+# AgriLoop-Backend
 Backend code and ML models

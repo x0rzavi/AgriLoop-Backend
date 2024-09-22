@@ -2,10 +2,12 @@ import io
 
 import tensorflow as tf
 from flask import Flask, jsonify, render_template, request
+from flask_cors import CORS
 from PIL import Image
 from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
+CORS(app)
 model = load_model("./models/waste_classification_v1.keras")
 
 class_names = [
